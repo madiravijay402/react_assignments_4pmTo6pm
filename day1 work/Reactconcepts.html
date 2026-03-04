@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Concepts</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        section {
+            background: white;
+            margin-bottom: 25px;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #667eea;
+        }
+        h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #764ba2;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #667eea;
+            font-weight: 600;
+        }
+        .example-box {
+            background: #f9f9f9;
+            border-left: 3px solid #667eea;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        pre {
+            background: #282c34;
+            color: #abb2bf;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .comparison-item {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 4px;
+            border: 2px solid #ddd;
+        }
+        .comparison-item h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>React Concepts Guide</h1>
+        <p>A comprehensive overview of fundamental React concepts and terminology</p>
+    </header>
+
+    <main>
+        
+        <section>
+            <h2>What is React?</h2>
+            <p>
+                <strong>React</strong> is a JavaScript library used to build user interfaces, 
+                especially for <strong>Single Page Applications (SPAs)</strong>. It provides 
+                efficient ways to create interactive and dynamic web applications.
+            </p>
+        </section>
+
+        
+        <section>
+            <h2>JavaScript vs JSX</h2>
+            
+            <h3>JavaScript (JS)</h3>
+            <p>JavaScript is a programming language used to make websites interactive and dynamic. 
+               It runs in the browser and can:</p>
+            <ul>
+                <li>Change HTML content</li>
+                <li>Handle user events (clicks, typing)</li>
+                <li>Fetch data from servers</li>
+                <li>Build full web applications</li>
+            </ul>
+
+            <h3>JSX (JavaScript XML)</h3>
+            <p><strong>JSX</strong> is a syntax used in React that allows us to write HTML-like code 
+               inside JavaScript. It makes UI code easier to read and understand.</p>
+            <div class="example-box">
+                <strong>Example:</strong>
+                <pre>const element = &lt;h1&gt;Hello World&lt;/h1&gt;;</pre>
+            </div>
+        </section>
+
+        
+        <section>
+            <h2>What is main.jsx? Why do we use it?</h2>
+            <p><strong>main.jsx</strong> is the entry point file in a React project 
+               (especially in Vite). It is responsible for:</p>
+            <ul>
+                <li>Starting the React application</li>
+                <li>Rendering the root component (App.jsx)</li>
+                <li>Connecting React with the HTML div <code>id="root"</code></li>
+            </ul>
+            <div class="example-box">
+                <strong>Example:</strong>
+                <pre>import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  &lt;App /&gt;
+);</pre>
+            </div>
+            <p><strong>Summary:</strong> main.jsx → starts the React app</p>
+        </section>
+
+       
+        <section>
+            <h2>What is Babel Compiler?</h2>
+            <p><strong>Babel</strong> is a JavaScript compiler that converts:</p>
+            <ul>
+                <li>JSX → JavaScript</li>
+                <li>Modern JavaScript → Browser-compatible JavaScript</li>
+            </ul>
+            
+            <div class="example-box">
+                <strong>Example - JSX Code:</strong>
+                <pre>const element = &lt;h1&gt;Hello&lt;/h1&gt;;</pre>
+            </div>
+
+            <div class="example-box">
+                <strong>Babel converts it into:</strong>
+                <pre>const element = React.createElement("h1", null, "Hello");</pre>
+            </div>
+
+            <p>This conversion allows browsers to understand JSX code properly.</p>
+        </section>
+
+       
+        <section>
+            <h2>Virtual DOM vs Real DOM</h2>
+            
+            <div class="comparison">
+                <div class="comparison-item">
+                    <h4>Real DOM</h4>
+                    <p>The actual HTML structure in the browser.</p>
+                    <div class="example-box">
+                        <strong>Example:</strong>
+                        <pre>&lt;h1&gt;Hello&lt;/h1&gt;</pre>
+                    </div>
+                    <h4 style="color: #d32f2f; margin-top: 15px;">Problems:</h4>
+                    <ul style="margin-left: 15px;">
+                        <li>Updating the real DOM is <strong>slow</strong></li>
+                        <li>Each change re-renders the entire page</li>
+                    </ul>
+                </div>
+
+                <div class="comparison-item">
+                    <h4>Virtual DOM</h4>
+                    <p>A lightweight copy of the real DOM used by React.</p>
+                    <h4 style="color: #388e3c; margin-top: 10px;">Process:</h4>
+                    <ol style="margin-left: 15px;">
+                        <li>React creates a Virtual DOM</li>
+                        <li>When state changes → React compares old and new Virtual DOM (diffing)</li>
+                        <li>Only the changed part is updated in the real DOM</li>
+                    </ol>
+                    <p style="margin-top: 15px;"><strong>Result:</strong> This makes React very <strong>fast</strong>.</p>
+                </div>
+            </div>
+        </section>
+
+       
+        <section>
+            <h2>Export Default vs Named Exports</h2>
+            
+            <h3>Export Default</h3>
+            <p>A file can have <strong>only one default export</strong>.</p>
+            <div class="example-box">
+                <strong>Example:</strong>
+                <pre>export default function App() {
+  return &lt;h1&gt;Hello&lt;/h1&gt;;
+}</pre>
+            </div>
+
+            <h3>Named Export</h3>
+            <p>You can export <strong>multiple things</strong> from a file.</p>
+            <div class="example-box">
+                <strong>Example:</strong>
+                <pre>export const name = "Vijay";
+export const age = 22;</pre>
+            </div>
+        </section>
+
+       
+        <section>
+            <h2>How to Import Export Default and Named Exports?</h2>
+            
+            <h3>Default Export Import</h3>
+            <p><strong>File:</strong></p>
+            <pre>export default App;</pre>
+            <p><strong>Import (No curly braces needed):</strong></p>
+            <pre>import App from "./App";</pre>
+
+            <h3>Named Export Import</h3>
+            <p><strong>Example:</strong></p>
+            <pre>import { name, age } from "./file";</pre>
+        </section>
+    </main>
+</body>
+</html>
