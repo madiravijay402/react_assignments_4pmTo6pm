@@ -1,20 +1,23 @@
 
 import './App.css'
+import Page from './pages/page'
+
 
 function App() {
   
 
   return (
     <>
-      <Login/>
+     <Page/>
     </>
   )
 }
 
 export default App
 
-const Login=()=>{
+export const Login=()=>{
   return (
     <button>Book Tickets</button>
   )
 }
+

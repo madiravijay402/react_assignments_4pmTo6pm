@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  background: linear-gradient(to right, #212020, #eee);
+  font-family: Arial, sans-serif;
+}
+
+.navi {
+  height: 80px;
+  width: 100%;
+  background: linear-gradient(to bottom, #ab0707, #000000);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.navi > div:first-child {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navi > div:last-child {
+  display: flex;
+  gap: 30px;
+}
+
+.navi a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  font-weight: 500;
+}
+
+.navi a:hover {
+  color: #ff6b6b;
+  text-shadow: 0 0 10px #ab0707;
+}
+
+.tick {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.tick button {
+  padding: 12px 30px;
+  font-size: 16px;
+  background: linear-gradient(to bottom, #ab0707, #000000);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-weight: bold;
+}
+
+.tick button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(171, 7, 7, 0.4);
+}
