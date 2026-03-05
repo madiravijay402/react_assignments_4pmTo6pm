@@ -1,8 +1,17 @@
-import {component} from 'react';
+import {Component} from 'react';
 import jn from '../assets/jn1.jpg'
-class InfoPage1 extends component{
+class InfoPage1 extends Component{
     constructor(){
         super()
+        this.state={
+            count:0
+        }
+    }
+    increment(){
+        this.setState=this.state.count+1
+    }
+    decrement(){
+        this.setState=this.state.count-1;
     }
     render(){
         return(
@@ -12,13 +21,13 @@ class InfoPage1 extends component{
                         <img src={jn} alt="" />
                     </div>
                     <div>
-                        <p></p>
-                        <div className='button'>
+                        <p style={{width:"200px", backgroundColor:'blue', height:"100px"}}>{this.setState}</p>
+                        <div className='grd'>
                             <div>
-                                <button>+</button>
+                                <button onClick={this.increment}>+</button>
                             </div>
                             <div>
-                                <button>-</button>
+                                <button onClick={this.decrement}>-</button>
                             </div>
                         </div>
                         <button>book tickets</button>
