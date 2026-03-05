@@ -1,11 +1,11 @@
 import React from "react";
-import logo from "../assets/titlef.png"
+import logo from "../assets/prd2.jpg"
 const NavBar=()=>{
     return(
         <>
         
-             <div style={{width:"fit-content"}}>
-                <img src={logo} alt="" style={{boxSizing:"border-box"}} />
+             <div style={{boxSizing:'border-box'}}>
+                <img src={logo} alt="" style={{boxSizing:"border-box",width:"20%"}} />
             </div>
         
             <div className="links">

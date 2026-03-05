@@ -5,14 +5,14 @@
 }
 
 body, html {
-  background: linear-gradient(to right, #212020, #eee);
+  background: linear-gradient(to bottom, #000000, #000000);
   font-family: Arial, sans-serif;
 }
 
 .navi {
   height: 80px;
   width: 100%;
-  background: linear-gradient(to bottom, #ab0707, #000000);
+  background: linear-gradient(to bottom, #d37408, #000000);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,11 +21,11 @@ body, html {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-.navi > div:first-child {
+/* .navi > div:first-child {
   color: #fff;
   font-size: 24px;
   font-weight: bold;
-}
+} */
 
 .navi > div:last-child {
   display: flex;
@@ -45,7 +45,7 @@ body, html {
   text-shadow: 0 0 10px #ab0707;
 }
 
-.tick {
+/* .tick {
   padding: 40px 20px;
   text-align: center;
 }
@@ -60,9 +60,38 @@ body, html {
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   font-weight: bold;
-}
+} */
 
-.tick button:hover {
+/* .tick button:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(171, 7, 7, 0.4);
+} */
+
+.page1{
+    
+    margin-top: 50px;
+}
+.grd{
+  display: flex;
+  justify-content: space-around;
+}
+
+.ft{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+.col{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cast{
+  margin-top: 30px;
+  display: block;
+}
+
+.case1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
