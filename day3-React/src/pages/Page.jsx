@@ -1,6 +1,7 @@
 import { Component } from "react";
 import NavBar from "../components/NavBar";
 import InfoPage1 from "../components/InfoPage1";
+import Theory from "../components/Theory";
 class Page extends Component{
     constructor(){
         super()
@@ -9,7 +10,12 @@ class Page extends Component{
         return(
             <>
                 <NavBar/>
-                <InfoPage1/>
+                <div style={{marginTop:"50px"}}>
+                    <InfoPage1/>
+                </div>
+                <div style={{marginTop:"75px"}}>
+                    <Theory/>
+                </div>
             </>
         )
     }
