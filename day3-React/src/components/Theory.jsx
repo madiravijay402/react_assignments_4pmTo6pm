@@ -2,7 +2,7 @@ import React from 'react'
 
 function Theory() {
   return (
-    <div>
+    <div style={{textAlign:"center"}}>
       <h1>React Class Components Overview</h1>
 
       <section>
@@ -139,13 +139,6 @@ function Theory() {
         <h2>11. Important Note (Modern React)</h2>
         <p>Most developers now prefer functional components with Hooks.</p>
 
-      </section>
-
-      <section>
-        <h2>✅ Interview Tip</h2>
-        <p>Common question: why use <code>setState</code> instead of changing state directly?</p>
-        <p><strong>Answer:</strong> <code>setState</code> tells React to re-render the component.</p>
-        <p>If you'd like an example combining class components, lifecycle, button, and <code>setState</code>, let me know!</p>
       </section>
     </div>
   )
