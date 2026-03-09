@@ -7,7 +7,6 @@ const Nullish = () => {
         <div>
             <h1>{username ?? "Vijay"}</h1>
         </div>
-        
     </>
   )
 }

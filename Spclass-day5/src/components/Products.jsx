@@ -24,11 +24,11 @@ const Products = () => {
 
     return (
         <>
-            <div className="flex flex-wrap justify-center gap-6 mx-10">
+            <div className="flex flex-wrap justify-center gap-6 px-4 sm:px-6 lg:px-10 my-10">
                 {productObj.map((val, ind) => (
                     <div
                         key={ind}
-                        className="w-60 bg-white rounded-lg shadow-lg p-4 flex flex-col items-center"
+                        className="w-full xs:w-60 sm:w-56 md:w-60 bg-white rounded-lg shadow-lg p-4 flex flex-col items-center"
                     >
                         <img
                             src={val.img}
