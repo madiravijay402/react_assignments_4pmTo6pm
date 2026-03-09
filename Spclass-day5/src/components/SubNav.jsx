@@ -5,7 +5,7 @@ import { FaCartPlus } from "react-icons/fa";
 const SubNav = () => {
   return (
     <>
-    <div className='flex justify-between mx-30'>
+    <div className='flex flex-wrap justify-between mx-30'>
         <div>
             <select className="border rounded p-2 bg-white text-gray-800">
                 <option value="">Laptop</option>

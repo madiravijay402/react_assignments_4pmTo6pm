@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Products = () => {
-    // use public folder images and more descriptive names
     const productObj = [
         {
             name: "Fridge",

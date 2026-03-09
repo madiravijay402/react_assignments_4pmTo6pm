@@ -3,7 +3,7 @@ import { MdCall } from "react-icons/md";
 const NavBar = () => {
   return (
     <>
-    <div className='flex justify-between mx-10 my-5  p-2 items-center font-bold '>
+    <div className='flex  flex-wrap justify-between mx-10 my-5  p-2 items-center font-bold '>
         <div className='w-75 mx-10'>
             <img src="./VasanthandCoLogo.png" alt="" />
         </div>
