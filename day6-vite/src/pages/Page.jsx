@@ -2,6 +2,8 @@ import React from 'react'
 import UserDetails from '../components/UserDetails'
 import ProductDetails from '../components/ProductDetails'
 import StudentDetails from '../components/StudentDetails'
+import SkillsList from '../components/SkillsList'
+import EmployeeList from '../components/EmployeeList'
 
 const Page = () => {
   return (
@@ -9,6 +11,8 @@ const Page = () => {
       <UserDetails />
       <ProductDetails />
       <StudentDetails />
+      <SkillsList />
+      <EmployeeList />
     </>
   )
 }
