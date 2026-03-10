@@ -4,11 +4,11 @@ import { Routes } from 'react-router-dom'
 const RoutePath = () => {
   return (
     <>
-    <div>
+    <div className='bg-brown-500 h-160'>
         <Routes>
-            <Routes path="/" />
-            <Routes path="/" />
-            <Routes path="/" />
+            <Routes path="/" element={<About/>}/>
+            <Routes path="/" element={<About/>}/>
+            <Routes path="/" element={<About/>} />
         </Routes>
     </div>
     </>

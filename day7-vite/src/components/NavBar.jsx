@@ -3,7 +3,7 @@ import React from 'react'
 const NavBar = () => {
   return (
     <>
-      <div>
+      <div className='bg-black-300 flex jsutify-content'>
         <div>
             logo
         </div>
