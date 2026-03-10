@@ -8,9 +8,9 @@ const NavBar = () => {
             logo
         </div>
         <div>
-            <Link path="/">Home</Link>
-            <Link path="/about">About</Link>
-            <Link path="/contact">Contact</Link>
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/contact">Contact</Link>
         </div>
       </div>
     </>

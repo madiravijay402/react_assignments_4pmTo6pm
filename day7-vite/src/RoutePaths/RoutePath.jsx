@@ -5,7 +5,11 @@ const RoutePath = () => {
   return (
     <>
     <div>
-        <Routes
+        <Routes>
+            <Routes path="/" />
+            <Routes path="/" />
+            <Routes path="/" />
+        </Routes>
     </div>
     </>
   )
