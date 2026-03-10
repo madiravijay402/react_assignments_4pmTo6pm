@@ -6,7 +6,7 @@ import Contact from '../components/Contact'
 
 const RoutePath = () => {
   return (
-    <div className="min-h-[200px]">
+    <div className="h-200">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
