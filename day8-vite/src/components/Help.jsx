@@ -1,8 +1,17 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Help = () => {
+
+  const navigate = useNavigate()
+
   return (
-    <div className='bg-green-500 h-70 flex justify-center items-center'>Help</div>
+    <>
+      <h1>Help Page</h1>
+      <button onClick={() => navigate("/")}>
+        Go to Home
+      </button>
+    </>
   )
 }
 

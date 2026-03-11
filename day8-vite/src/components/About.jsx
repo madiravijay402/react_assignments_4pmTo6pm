@@ -1,11 +1,17 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const About = () => {
+
+  const navigate = useNavigate()
+
   return (
     <>
-         <div className='bg-red-500 h-70 flex justify-center items-center'>About</div>
+      <h1>About Page</h1>
+      <button onClick={() => navigate("/contact")}>
+        Go to Contact
+      </button>
     </>
-   
   )
 }
 
