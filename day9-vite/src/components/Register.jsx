@@ -2,7 +2,11 @@ import React from 'react'
 
 const Register = () => {
   return (
-    <div>Register</div>
+    <>
+        <div className='bg-red-600 flex justify-center items-center h-100'>
+            Register
+        </div>
+    </>
   )
 }
 
