@@ -1,9 +1,9 @@
 import React from 'react'
+import RoutesPath from '../RoutePath/RoutesPath'
 
 const Pages = () => {
   return (
     <>
-        <NavBar/>
       <RoutesPath/>
     </>
   )

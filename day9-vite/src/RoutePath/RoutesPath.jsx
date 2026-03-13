@@ -1,19 +1,30 @@
 import React from 'react'
-import {Routes,Route} from 'react-router-dom'
+import { Routes, Route, Outlet } from 'react-router-dom'
+import NavBar from '../components/NavBar'
 import Home from '../components/Home'
 import About from '../components/About'
 import Login from '../components/Login'
 import Register from '../components/Register'
-const RoutesPath = () => {
+
+const LayoutWithNav = () => {
   return (
     <>
-    <Routes>
-      <Route path='/' element={<Home/>}/>
-      <Route path='/about' element={<About/>}/>
-      <Route path='/Login' element={<Login/>}/>
-      <Route path='/Register' element={<Register/>}/>
-    </Routes>
+      <NavBar />
+      <Outlet />
     </>
+  )
+}
+
+const RoutesPath = () => {
+  return (
+    <Routes>
+      <Route element={<LayoutWithNav />}>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+      </Route>
+      <Route path='/login' element={<Login />} />
+      <Route path='/register' element={<Register />} />
+    </Routes>
   )
 }
 
