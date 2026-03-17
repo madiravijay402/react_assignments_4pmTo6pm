@@ -13,11 +13,11 @@ const Counter = () => {
    }
   return (
    <>
-        <div>
+        <div className='bg-red-500 p-5 flex flex-col gap-3'>
             <h1>Count : {count}</h1>
-            <button onClick={Increase}>increse</button>
-            <button onClick={decrease}>decrease</button>
-            <button onClick={reset}>reset</button>
+            <button onClick={Increase} className='bg-white rounded '>increse</button>
+            <button onClick={decrease} className='bg-white rounded '>decrease</button>
+            <button onClick={reset} className='bg-white rounded '>reset</button>
         </div>
    </>
   )
