@@ -16,7 +16,7 @@ const Task5 = () => {
   };
 
   return (
-    <div className='bg-purple-500 flex flex-col gap-5 justify-center p-5'>
+    <div className='bg-purple-500 flex flex-col gap-5 justify-center p-5 '>
         <div>
              <h2>Name: {profile.name}</h2>
       <h2>Role: {profile.role}</h2>
