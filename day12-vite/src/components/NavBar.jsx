@@ -13,7 +13,7 @@ const NavBar = () => {
                 <Link to="/Skills">Skills</Link>
                 <Link to="/Toggle">Toggle</Link>
                 <Link to="/Twice">Twice</Link>
-                <Link to="/counter">Counter</Link>
+                <Link to="/User">User</Link>
             </div>
         </div>
     </>
