@@ -12,11 +12,6 @@ const Page = () => {
     <>
         <NavBar/>
         <RoutePath/>
-        <Counter/>
-        <Twice/>
-        <Toggle/>
-        <Skills/>
-        <User/>
     </>
   )
 }
