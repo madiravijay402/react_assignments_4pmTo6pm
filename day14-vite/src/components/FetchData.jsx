@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const FetchData = () => {
+    const[users,setUsers]=useState([]);
   return (
     <>
-        
+
     </>
   )
 }
