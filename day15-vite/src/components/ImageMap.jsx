@@ -15,9 +15,9 @@ const ImageMap = () => {
 
   return (
     <>
-      <div>
+      <div className='flex bg-amber-500 flex-wrap justify-around text-white p-3 gap-4'>
         {info.map((u) => (
-          <div key={u.id}>
+          <div key={u.id} className='bg-black p-3 flex flex-col rounded-2xl items-center'>
             <div>
               <img src={u.image} alt={u.name} width="200" />
             </div>
@@ -26,7 +26,7 @@ const ImageMap = () => {
         ))}
       </div>
 
-      <button onClick={fetchData}>Click</button>
+      <button onClick={fetchData} className='bg-black p-2 rounded text-white'>Show</button>
     </>
   )
 }
