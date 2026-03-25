@@ -1,8 +1,14 @@
 import React from 'react'
+import Pages from './Pages/Pages'
+import CountProvider from './provider/CountProvider'
 
 const App = () => {
   return (
-    <div>App</div>
+   <>
+   <CountProvider>
+       <Pages/>
+   </CountProvider>
+   </>
   )
 }
 
