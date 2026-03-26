@@ -1,10 +1,10 @@
 import React, { useContext } from 'react'
-import Countcontext from '../createcontext/Countcontext'
+import ThemeContext from '../createcontext/ThemeContext'
 import LangContext from '../createcontext/LangContext'
 
 const Language = () => {
     const{lan,setLan}=useContext(LangContext)
-    const{toggle}=useContext(Countcontext)
+    const{toggle}=useContext(ThemeContext)
   return (
     <>
     <div>

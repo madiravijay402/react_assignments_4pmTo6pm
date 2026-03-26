@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Countcontext from '../createcontext/Countcontext'
+import ThemeContext from '../createcontext/ThemeContext'
 
 const ThemeProvider = ({children}) => {
     const[toggle,setToggle]=useState(false)
@@ -8,9 +8,9 @@ const ThemeProvider = ({children}) => {
     }
   return (
     <>
-        <Countcontext.Provider value={{toggle,changeTheme}}>
+        <ThemeContext.Provider value={{toggle,changeTheme}}>
             {children}
-        </Countcontext.Provider>
+        </ThemeContext.Provider>
     </>
   )
 }
