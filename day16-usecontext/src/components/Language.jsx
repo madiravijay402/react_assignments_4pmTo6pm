@@ -1,0 +1,26 @@
+import React, { useContext } from 'react'
+import Countcontext from '../createcontext/Countcontext'
+
+const Language = () => {
+    const{lan,setLan,toggle}=useContext(Countcontext)
+  return (
+    <>
+    <div>
+        {toggle? <div className='bg-black text-white rounded p-2 flex flex-col items-center justify-center'>
+            <p>{lan==="en"?"welcome":"vanakam"}</p>
+        <button onClick={()=>setLan("en")}>english</button>
+        <button onClick={()=>setLan("tn")}>tamil</button>
+        </div>: <div className='bg-white text-black rounded p-2 flex flex-col items-center justify-center'>
+            <p>{lan==="en"?"welcome":"vanakam"}</p>
+        <button onClick={()=>setLan("en")}>english</button>
+        <button onClick={()=>setLan("tn")}>tamil</button>
+        </div>}
+       
+        
+    </div>
+        
+    </>
+  )
+}
+
+export default Language
