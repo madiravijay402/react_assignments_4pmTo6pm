@@ -2,17 +2,13 @@ import React, { useContext } from 'react'
 import Countcontext from '../createcontext/Countcontext'
 
 const NavBar = () => {
-    const{data,handlechange}=useContext(Countcontext)
+    const{changeTheme,toggle}=useContext(Countcontext)
   return (
     <>
-        <div className='bg-black flex justify-center gap-5 items-center text-white p-2'>
-            <div>
-                {data}
-            </div>
-            <div>
-                <button className='bg-amber-500 rounded-2xl text-black p-2' onClick={handlechange}>click</button>
-            </div>
-        </div>
+    {toggle?<div className='bg-black flex justify-center gap-5 items-center text-white p-2 mb-5'> <button className='bg-amber-500 rounded-2xl text-black p-2' onClick={changeTheme}>{toggle?"dark":"light"}</button></div>:<div className='mb-5 bg-white flex justify-center gap-5 items-center text-black p-2'> <button className='bg-amber-500 rounded-2xl text-black p-2' onClick={changeTheme}>{toggle?"dark":"light"}</button></div>}
+       
+            
+        
     </>
   )
 }
