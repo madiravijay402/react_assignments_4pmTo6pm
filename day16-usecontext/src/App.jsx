@@ -1,12 +1,15 @@
 import React from 'react'
 import Pages from './Pages/Pages'
 import ThemeProvider from './provider/ThemeProvider'
+import LangProvider from './provider/LangProvider'
 
 const App = () => {
   return (
    <>
    <ThemeProvider>
-       <Pages/>
+       <LangProvider>
+           <Pages/>
+       </LangProvider>
    </ThemeProvider>
       
    

@@ -1,12 +1,12 @@
-import React, { Children, useState } from 'react'
-import Countcontext from '../createcontext/Countcontext'
+import React, { useState } from 'react'
+import LangContext from '../createcontext/LangContext'
 
-const LangProvider = ({Children}) => {
+const LangProvider = ({children}) => {
     const[lan,setLan]=useState("en")
   return (
-    <Countcontext.Provider value={{lan,setLan}}>
-        {Children}
-    </Countcontext.Provider>
+    <LangContext.Provider value={{lan,setLan}}>
+        {children}
+    </LangContext.Provider>
   )
 }
 
