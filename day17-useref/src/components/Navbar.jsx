@@ -37,12 +37,12 @@ const Navbar = () => {
               </h1>
             </div>
             
-            <div className="w-10"></div> {/* Spacer to keep heading centered */}
+            <div className="w-10"></div>
           </div>
         </div>
       </nav>
 
-      {/* Backdrop */}
+
       {isOpen && (
         <div 
           className="fixed inset-0 bg-slate-900/50 z-40 transition-opacity" 
@@ -51,7 +51,7 @@ const Navbar = () => {
         />
       )}
 
-      {/* Side Menu Drawer */}
+ 
       <div 
         className={`fixed inset-y-0 left-0 transform bg-slate-800 w-64 h-full shadow-2xl z-50 transition-transform duration-300 ease-in-out ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
