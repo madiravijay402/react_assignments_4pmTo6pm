@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center py-12 px-4">
       <h1 className="text-4xl font-extrabold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-500">
-        React Assignments Dashboard
+        React day-18 Assignments Dashboard
       </h1>
       
       <div className="flex flex-wrap justify-center gap-8 w-full max-w-5xl">
