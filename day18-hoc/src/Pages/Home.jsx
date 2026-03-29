@@ -15,11 +15,11 @@ const Home = () => {
             🔐 LOGIN / REGISTER Flow
           </h2>
           <ul className="space-y-3 mb-6 text-gray-300 text-sm">
-            <li>✅ <span className="font-semibold text-white">Task 1:</span> Basic Register (localStorage)</li>
-            <li>✅ <span className="font-semibold text-white">Task 2:</span> Login Validation</li>
-            <li>✅ <span className="font-semibold text-white">Task 3:</span> Redirect After Login</li>
-            <li>✅ <span className="font-semibold text-white">Task 4:</span> Logout System</li>
-            <li>✅ <span className="font-semibold text-white">Task 5:</span> Multiple Users Array</li>
+            <li><span className="font-semibold text-white">Task 1:</span> Basic Register (localStorage)</li>
+            <li><span className="font-semibold text-white">Task 2:</span> Login Validation</li>
+            <li><span className="font-semibold text-white">Task 3:</span> Redirect After Login</li>
+            <li><span className="font-semibold text-white">Task 4:</span> Logout System</li>
+            <li><span className="font-semibold text-white">Task 5:</span> Multiple Users Array</li>
           </ul>
           <div className="flex flex-col gap-3">
             <Link to="/register" className="bg-indigo-600 hover:bg-indigo-700 text-center py-2 rounded-lg font-medium transition shadow-md">
