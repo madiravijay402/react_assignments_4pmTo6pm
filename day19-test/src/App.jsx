@@ -2,6 +2,7 @@ import React from 'react'
 import UseState from './components/UseState'
 import UseEffects from './components/UseEffects'
 import UseReffs from './components/UseReffs'
+import UseConts from './components/UseConts'
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
         <UseState/>
         <UseEffects/>
         <UseReffs/>
+        <UseConts/>
       </div>
     </>
     
