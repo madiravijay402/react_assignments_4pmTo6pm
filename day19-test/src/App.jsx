@@ -1,8 +1,9 @@
 import React from 'react'
+import UseState from './components/UseState'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div><UseState/></div>
   )
 }
 
