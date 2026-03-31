@@ -1,6 +1,15 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const UseEffects = () => {
+    const[show,setShow]=useState([])
+    useEffect(()=>{
+        const fetchData=async()=>{
+            const data=await fetch("https://dummyjson.com/recipes?limit=5")
+            const res=await data.json()
+            setShow(res.recipes)
+        }
+        fetchData()
+    },[])
   return (
     <>
         <div>
@@ -49,6 +58,18 @@ const UseEffects = () => {
                     </ul>
                 </p>
             </div>
+            {show.map((e)=>(
+                
+                 <div key={e.id} className='bg-amber-500 flex  flex-col items-center w-450 h-40 '>
+                        <div>
+                            <img src={e.image} className='w-50' />
+                        </div>
+                        <div>
+                            {e.name}
+                        </div>
+            </div>
+            ))}
+           
         </div>
     </>
   )
