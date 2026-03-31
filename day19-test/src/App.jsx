@@ -1,9 +1,16 @@
 import React from 'react'
 import UseState from './components/UseState'
+import UseEffects from './components/UseEffects'
 
 const App = () => {
   return (
-    <div><UseState/></div>
+    <>
+      <div>
+        <UseState/>
+        <UseEffects/>
+      </div>
+    </>
+    
   )
 }
 
