@@ -44,7 +44,7 @@ const UseEffects = () => {
                     {'useEffect(() => {}, [value])'}
                 </code>
                 </b>
-                <p>
+                
                     <ul>
                         <li>
                             runs after every re-render
@@ -56,7 +56,7 @@ const UseEffects = () => {
                             first render then when ever value changes it renders
                         </li>
                     </ul>
-                </p>
+                
             </div>
             {show.map((e)=>(
                 
