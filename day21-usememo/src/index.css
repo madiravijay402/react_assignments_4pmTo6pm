@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-slate-100 text-slate-800 transition-colors duration-300;
+  }
+}
+
+.dark-theme {
+  @apply bg-slate-900 text-slate-200;
+}
